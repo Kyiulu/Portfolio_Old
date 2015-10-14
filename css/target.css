@@ -1,0 +1,36 @@
+/* ########### targets ##########*/
+#about:target ~ #scroll{
+	transform: translateY(0%);
+}
+#lp:target ~ #scroll{
+	transform: translateY(-100%);
+}
+#macro:target ~ #scroll{
+	transform: translateY(-200%);
+}
+#bob2014:target ~ #scroll{
+	transform: translateY(-300%);
+}
+
+#lp:target ~ #scroll #sec-lp .desc,
+#macro:target ~ #scroll #sec-macro .desc,
+#bob2014:target ~ #scroll #sec-bob2014 .desc,
+#about:target ~ #scroll #sec-about .desc{
+	animation: fadeIn 1.1s ease-in-out 1s backwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+	0% {
+		transform: translateX(0px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(60%);
+		opacity: 1;
+	}
+}
+
+#social:hover{
+	transform: translateX(-70px);
+}

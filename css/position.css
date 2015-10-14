@@ -1,0 +1,91 @@
+/* ########### POSITION ##########*/
+*{
+	box-sizing: border-box;
+}
+body{
+	color:lightgrey;
+	background-color:black;
+	font-family:Courier New;
+	overflow: hidden;
+}
+header{
+	position:fixed;
+	top:0;left:0;
+	z-index: -1;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+header h1{
+	float: left;
+	margin: 20px;
+}
+nav{
+	margin: auto 20px;
+}
+nav li{
+	display: inline;
+	padding: 5px 5px 5px 30px;
+	margin-left: 10px;
+	border: solid 1px lightgrey;
+}
+aside#social{
+	position: fixed;
+	top: 50%;
+	right: -70px;
+	/*height: 50%;*/
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+aside#social ul{
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+aside#social div{
+	height: 64px;
+	width: 64px;
+	border: solid 1px white;
+	margin: 5px;
+}
+footer{
+	position:fixed;
+	bottom: 0;left:0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+footer p{
+	float: right;
+	margin-right: 20px;
+}
+#content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+#scroll, .panel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#scroll{
+	top: 0;
+	left: 0;
+	transition: all 1.0s ease-in-out;
+
+	/* Let's enforce some hardware acceleration */
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+.panel{
+	overflow: hidden;
+}
+.desc{
+	position: absolute;
+	top: 25%;
+	left: -20%;
+	width: 40%;
+	height: 50%;
+}

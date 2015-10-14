@@ -1,0 +1,52 @@
+/* ########### STYLE ##########*/
+#sec-lp{
+	background-image: url(../img/back1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#sec-macro{
+	background-image: url(../img/back2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#sec-bob2014{
+	background-image: url(../img/back3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#sec-about{
+	background-image: url(../img/back4.jpg);
+	background-position: center;
+	background-size: cover;
+}
+nav a{
+	text-decoration: none;
+	color: lightgrey;
+}
+nav a:hover{
+	background-color: lightgrey;
+	color: black;
+}
+nav a:active{
+	background-color: white;
+}
+aside#social{
+	border-radius: 20px 0 0 20px;
+	transition: all 0.25s;
+}
+.fiveHpx{
+	/*background-color: black;*/
+	background-image: url(../img/500icon.png);
+	background-position: center;
+	background-size: cover;
+}
+.desc{
+	border-radius: 20px;
+	opacity: 0;
+	background-color: rgba(180, 180, 180, 0.5);
+	padding: 10px;
+	color: black
+}
+.desc p{
+	font-weight: bolder;
+}
