@@ -35,17 +35,49 @@ aside#social{
 	transition: all 0.25s;
 }
 .fiveHpx{
-	/*background-color: black;*/
 	background-image: url(../img/500icon.png);
 	background-position: center;
 	background-size: cover;
 }
+.flickr{
+	background-image: url(../img/flickr.png);
+	background-position: center;
+	background-size: cover;
+}
+.fb{
+	background-image: url(../img/facebook.png);
+	background-position: center;
+	background-size: cover;
+}
 .desc{
-	border-radius: 20px;
+	border-radius: 10px;
 	opacity: 0;
 	background-color: rgba(180, 180, 180, 0.5);
 	padding: 10px;
 	color: black
+}
+.desc a{
+	float: right;
+	text-decoration: none;
+	color: lightgrey;
+	border: solid 1px lightgrey;
+	padding: 5px 5px 5px 30px;
+	margin-left: 10px;
+}
+.desc a::before{
+	content: "_";
+}
+.desc a:hover{
+	background-color: lightgrey;
+	color: black;
+}
+.desc a:active{
+	background-color: white;
+}
+.desc a.flickrG{
+	background-image: url(../img/Icoflickr.png);
+	background-repeat: no-repeat;
+	
 }
 .desc p{
 	font-weight: bolder;

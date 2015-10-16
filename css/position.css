@@ -44,7 +44,7 @@ aside#social ul{
 aside#social div{
 	height: 64px;
 	width: 64px;
-	border: solid 1px white;
+	/*border: solid 1px white;*/
 	margin: 5px;
 }
 footer{
@@ -87,5 +87,5 @@ footer p{
 	top: 25%;
 	left: -20%;
 	width: 40%;
-	height: 50%;
+	/*height: 50%;*/
 }
