@@ -1,5 +1,5 @@
 /* ########### STYLE ##########*/
-#sec-lp{
+#sec-lp, #sec-contact{
 	background-image: url(../img/back1.jpg);
 	background-position: center;
 	background-size: cover;
@@ -9,7 +9,7 @@
 	background-position: center;
 	background-size: cover;
 }
-#sec-bob2014{
+#sec-bob2014, #sec-cv{
 	background-image: url(../img/back3.jpg);
 	background-position: center;
 	background-size: cover;
@@ -56,6 +56,9 @@ aside#social{
 	padding: 10px;
 	color: black
 }
+.desc:hover{
+	opacity: 0.2;
+}
 .desc a{
 	float: right;
 	text-decoration: none;
@@ -77,8 +80,13 @@ aside#social{
 .desc a.flickrG{
 	background-image: url(../img/Icoflickr.png);
 	background-repeat: no-repeat;
-	
+
 }
 .desc p{
 	font-weight: bolder;
+}
+.desc img{
+	width: 20%;
+	height: 20%;
+	transition: all 1s;
 }
