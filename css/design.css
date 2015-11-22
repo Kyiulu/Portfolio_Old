@@ -15,7 +15,7 @@
 	background-size: cover;
 }
 #sec-about{
-	background-image: url(../img/back4.jpg);
+	background-image: url(../img/back6.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -52,12 +52,9 @@ aside#social{
 .desc{
 	border-radius: 10px;
 	opacity: 0;
-	background-color: rgba(180, 180, 180, 0.5);
+	background-color: rgba(30, 30, 30, 0.6);
 	padding: 10px;
-	color: black
-}
-.desc:hover{
-	opacity: 0.2;
+	color: lightgrey;
 }
 .desc a{
 	float: right;
@@ -85,8 +82,27 @@ aside#social{
 .desc p{
 	font-weight: bolder;
 }
+.desc .photos{
+	margin-bottom: 10px;
+}
 .desc img{
 	width: 20%;
-	height: 20%;
+	height: auto;
 	transition: all 1s;
+	border: solid 1px rgba(255, 255, 255, 0);
+}
+#center_box{
+	border-radius: 10px;
+	background-color: rgba(30, 30, 30, 0.6);
+	padding: 10px;
+	color: lightgrey;
+}
+.icon{
+	height: 64px;
+	width: 64px;
+	margin: 0 auto;
+}
+.icon img{
+	height: 64px;
+	width: 49px;
 }
