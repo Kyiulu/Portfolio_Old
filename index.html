@@ -13,68 +13,53 @@
 
 			<nav>
 				<ul>
-					<li><a href="#lp">_LightPainting</a></li>
-					<li><a href="#macro">_Macro</a></li>
-					<li><a href="#bob2014">_Bobital 2014</a></li>
-					<li><a href="#about">_A Propos</a></li>
+					<li><a class="active" href="#about">_A Propos</a></li>
+					<li><a href="#pict">_Photos</a></li>
+					<li><a href="#real">_Réalisations</a></li>
+					<li><a href="#contact">_Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<div id="content">
 
-			<div id="lp"></div>
-			<div id="macro"></div>
-			<div id="bob2014"></div>
 			<div id="about"></div>
+			<div id="pict"></div>
+			<div id="real"></div>
+			<div id="contact"></div>
 
 			<div id="scroll">
 
 				<section class="panel" id="sec-about">
-					<div class="desc">
-						<h2>Corentin Monmasson</h2>
+					<div class="infoPanel" id="aboutPanel">
+						<h2>Bienvenue</h2>
 						<p>
-							Bienvenue sur mon portfolio, je suis etudiant en première année de DUT MMI. Je pratique principalement la photographie, dont mes meilleurs réalisations son exposées sur ce site.
+							Je suis Corentin Monmasson et voici mon portfolio.
 						</p>
-						<a href="cv.html">CV</a>
-						<a href="mailto:corentin.monmasson@gmail.com">corentin.monmasson@gmail.com</a>
 					</div>
 				</section>
 
-				<section class="panel" id="sec-lp">
-					<div class="desc">
-						<h2>LightPainting</h2>
-						<div class="photos">
-							<img src="img/lp1.jpg"/>
-							<img src="img/lp4.jpg"/>
-							<img src="img/lp3.jpg"/>
-							<img src="img/lp2.jpg"/>
-						</div>
-						<a href="https://flic.kr/s/aHsk1r9tZd" target="_blank" class="flickrG link">Galerie</a>
+				<section class="panel" id="sec-pict">
+					<div class="infoPanel menuPanel">
+						<h2>Menu |||</h2>
+					</div>
+					<!-- <div class="infoPanel" id="pictPanel">
+
+					</div> -->
+				</section>
+
+				<section class="panel" id="sec-real">
+					<div class="infoPanel menuPanel">
+						<h2>Menu |||</h2>
+					</div>
+					<div class="infoPanel" id="realPanel">
+
 					</div>
 				</section>
 
-				<section class="panel" id="sec-macro">
-					<div class="desc">
-						<h2>Macro</h2>
-						<div class="photos">
-							<img src="img/mac1.jpg"/>
-							<img src="img/mac2.jpg"/>
-							<img src="img/mac3.jpg"/>
-						</div>
-						<a href="https://flic.kr/s/aHsjXbNpsK" target="_blank" class="flickrG">Galerie</a>
-					</div>
-				</section>
+				<section class="panel" id="sec-contact">
+					<div class="infoPanel" id="contactPanel">
 
-				<section class="panel" id="sec-bob2014">
-					<div class="desc">
-						<h2>Bobital 2014</h2>
-						<div class="photos">
-							<img src="img/bob1.jpg"/>
-							<img src="img/bob2.jpg"/>
-							<img src="img/bob3.jpg"/>
-						</div>
-						<a href="https://flic.kr/s/aHsk1qrzQc" target="_blank" class="flickrG">Galerie</a>
 					</div>
 				</section>
 
@@ -92,6 +77,8 @@
 		<footer>
 			<p>Copyright Corentin Monmasson aka. Bftech</p>
 		</footer>
-
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/nav.js"></script>
 	</body>
 </html>

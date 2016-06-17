@@ -1,20 +1,23 @@
 /* ########### STYLE ##########*/
-#sec-lp, #sec-contact{
-	background-image: url(../img/back1.jpg);
+body{
+	font-size: 2vmin;
+}
+#sec-about{
+	background-image: url(../img/back6.jpg);
 	background-position: center;
 	background-size: cover;
 }
-#sec-macro{
+#sec-pict{
 	background-image: url(../img/back2.jpg);
 	background-position: center;
 	background-size: cover;
 }
-#sec-bob2014, #sec-cv{
+#sec-real, #sec-cv{
 	background-image: url(../img/back3.jpg);
 	background-position: center;
 	background-size: cover;
 }
-#sec-about{
+#sec-contact{
 	background-image: url(../img/back6.jpg);
 	background-position: center;
 	background-size: cover;
@@ -22,8 +25,9 @@
 nav a{
 	text-decoration: none;
 	color: lightgrey;
+	transition: all 0.75s;
 }
-nav a:hover{
+nav a:hover, nav a.active{
 	background-color: lightgrey;
 	color: black;
 }
@@ -49,53 +53,12 @@ aside#social{
 	background-position: center;
 	background-size: cover;
 }
-.desc{
-	border-radius: 10px;
-	opacity: 0;
+#center_box{
+	border-radius: 20px;
 	background-color: rgba(30, 30, 30, 0.6);
 	padding: 10px;
-	color: lightgrey;
-}
-.desc a{
-	float: right;
-	text-decoration: none;
 	color: lightgrey;
 	border: solid 1px lightgrey;
-	padding: 5px 5px 5px 30px;
-	margin-left: 10px;
-}
-.desc a::before{
-	content: "_";
-}
-.desc a:hover{
-	background-color: lightgrey;
-	color: black;
-}
-.desc a:active{
-	background-color: white;
-}
-.desc a.flickrG{
-	background-image: url(../img/Icoflickr.png);
-	background-repeat: no-repeat;
-
-}
-.desc p{
-	font-weight: bolder;
-}
-.desc .photos{
-	margin-bottom: 10px;
-}
-.desc img{
-	width: 20%;
-	height: auto;
-	transition: all 1s;
-	border: solid 1px rgba(255, 255, 255, 0);
-}
-#center_box{
-	border-radius: 10px;
-	background-color: rgba(30, 30, 30, 0.6);
-	padding: 10px;
-	color: lightgrey;
 }
 .icon{
 	height: 64px;
@@ -105,4 +68,25 @@ aside#social{
 .icon img{
 	height: 64px;
 	width: 49px;
+}
+.panel div{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.infoPanel{
+	transition: all 0.75s;
+	padding: 0 15px;
+	border: solid 1px lightgrey;
+	border-radius: 20px;
+}
+.menuPanel{
+	opacity: 0.7;
+	border: solid 1px black;
+	border-radius: 0 20px 20px 0;
+}
+.menuPanel:hover{
+	border: solid 1px lightgrey;
+	opacity: 1;
+}
+#aboutPanel{
+	text-align: justify;
 }

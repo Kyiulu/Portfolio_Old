@@ -2,20 +2,20 @@
 #about:target ~ #scroll{
 	transform: translateY(0%);
 }
-#lp:target ~ #scroll{
+#pict:target ~ #scroll{
 	transform: translateY(-100%);
 }
-#macro:target ~ #scroll{
+#real:target ~ #scroll{
 	transform: translateY(-200%);
 }
-#bob2014:target ~ #scroll{
+#contact:target ~ #scroll{
 	transform: translateY(-300%);
 }
 
-#lp:target ~ #scroll #sec-lp .desc,
-#macro:target ~ #scroll #sec-macro .desc,
-#bob2014:target ~ #scroll #sec-bob2014 .desc,
-#about:target ~ #scroll #sec-about .desc{
+#about:target ~ #scroll #sec-lp .desc,
+#pict:target ~ #scroll #sec-macro .desc,
+#real:target ~ #scroll #sec-bob2014 .desc,
+#contact:target ~ #scroll #sec-about .desc{
 	animation: fadeIn 1.1s ease-in-out 1s backwards;
 	animation-fill-mode: forwards;
 }
@@ -32,7 +32,7 @@
 }
 
 #social:hover{
-	transform: translateX(-70px);
+	transform: translate(-70px,-50%);
 }
 
 .desc img:hover{
