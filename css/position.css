@@ -102,7 +102,6 @@ footer p{
 	left: 5%;
 	top: 15%;
 	/*transform: translateY(-50%);*/
-	height: 35%;
 	width: 65%;
 	border-radius: 20px;
 }
@@ -127,10 +126,79 @@ footer p{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	left: -120px;
+	left: -150px;
 	height: 70%;
 	width: 150px;
 }
-.menuPanel:hover{
-	transform: translate(120px,-50%);
+.menuPanel.deploy{
+	transform: translate(150px,-50%);
+}
+.switchButton{
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s;
+	opacity: 0;
+}
+.switchButton img{
+	display: inline-block;
+	height: 14px;
+}
+.switchButton img:first-child{
+	padding-right: 10px;
+}
+.menuButton{
+	position: absolute;
+	top: 15%;
+	left: 2%;
+	padding: 10px 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menuButton img{
+	display: inline-block;
+	padding-right: 10px;
+	height: 14px;
+}
+.select{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+.select li{
+	display: inline;
+	position: relative;
+}
+.select li:hover p{
+	opacity: 1;
+}
+.select li:hover img{
+	-webkit-filter:brightness(60%);
+	filter: brightness(60%);
+}
+.select img{
+	max-width: 100%;
+	height: auto;
+	border: solid 1px lightgrey;
+	transition: all 1s;
+}
+.select p{
+	position:absolute;;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	text-align: center;
+	color: lightgrey;
+	opacity: 0;
+	transition: all 1s;
 }

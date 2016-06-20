@@ -2,25 +2,23 @@
 body{
 	font-size: 2vmin;
 }
-#sec-about{
-	background-image: url(../img/back6.jpg);
+section{
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background-image 1s;
+}
+#sec-about{
+	background-image: url(../img/back2.jpg);
 }
 #sec-pict{
-	background-image: url(../img/back2.jpg);
-	background-position: center;
-	background-size: cover;
+	background-image: url(../img/back6.jpg);
 }
 #sec-real, #sec-cv{
 	background-image: url(../img/back3.jpg);
-	background-position: center;
-	background-size: cover;
 }
 #sec-contact{
 	background-image: url(../img/back6.jpg);
-	background-position: center;
-	background-size: cover;
 }
 nav a{
 	text-decoration: none;
@@ -71,6 +69,15 @@ aside#social{
 }
 .panel div{
 	background-color: rgba(0, 0, 0, 0.7);
+	font-family: 'Roboto Light', arial;
+}
+.menuButton, .switchButton{
+	transition: 1s;
+	border: solid 1px black;
+	border-radius: 20px;
+}
+.menuButton.hide{
+	opacity: 0;
 }
 .infoPanel{
 	transition: all 0.75s;
@@ -83,7 +90,7 @@ aside#social{
 	border: solid 1px black;
 	border-radius: 0 20px 20px 0;
 }
-.menuPanel:hover{
+.menuPanel.deploy{
 	border: solid 1px lightgrey;
 	opacity: 1;
 }
