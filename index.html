@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Bf_l@B</title>
+		<link href="http://fr.allfont.net/allfont.css?fonts=roboto-light" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/position.css">
 		<link rel="stylesheet" href="css/design.css">
 		<link rel="stylesheet" href="css/anim.css">
@@ -16,7 +17,7 @@
 					<li><a class="active" href="#about">_A Propos</a></li>
 					<li><a href="#pict">_Photos</a></li>
 					<li><a href="#real">_Réalisations</a></li>
-					<li><a href="#contact">_Contact</a></li>
+					<!-- <li><a href="#contact">_Contact</a></li> -->
 				</ul>
 			</nav>
 		</header>
@@ -34,51 +35,125 @@
 					<div class="infoPanel" id="aboutPanel">
 						<h2>Bienvenue</h2>
 						<p>
-							Je suis Corentin Monmasson et voici mon portfolio.
+							Je suis Corentin Monmasson, j'ai 20 ans et voici mon portfolio. Je suis actuellement élève
+							à l'IUT d'Elbeuf de l'université de Rouen en DUT MMI où je pratique la programmation
+							Web, l'inforgraphie ainsi que l'audiovisuel. Passionné par ce que je fais, j'aime par dessus
+							tout créer et innover et cela quelque soit le domaine. Je pratique par ailleurs
+							la photographie et aussi la course de drones en immersion.
+						</p>
+						<span>
+							<a href="#"><img src="img/social/fb.svg" alt="" /></a>
+							<a href="http://flickr.com/photos/bftech" target="_blank"><img src="img/social/fk.svg" alt="" /></a>
+						</span>
+					</div>
+				</section>
+
+<!-- PHOTOS -->
+				<section class="panel" id="sec-pict">
+					<span class="menuButton">
+						<img src="img/menu.svg" alt="Menu" />Menu
+					</span>
+					<span class="switchButton">
+						<img src="img/left.svg" alt="Left" />
+						<img src="img/fullscreen.svg" alt="Fullscreen" style="visibility:hidden" />
+						<img src="img/right.svg" alt="Right" />
+					</span>
+					<div class="infoPanel menuPanel">
+						<ul class="select">
+							<li>
+								<a href="">
+									<img src="img/pict/cat1.jpg" alt="Lightpainting" />
+									<p>LightPainting</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/pict/cat2.jpg" alt="Macro" />
+									<p>Macro</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/pict/cat3.jpg" alt="Bobital 2014" />
+									<p>Bobital 2014</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="pictPopup" class="infoPopup infoPanel">
+						<p>
+							Voici quelques unes de mes meilleurs photos.<br>
+							Une grande partie de mes prises de vue tournent autour du thème <q cite="">Voir l'invisible</q>
+							, que ce soit un phénomène lumineux, un point de vue inhabituel ou encore un lieux inexploré.
 						</p>
 					</div>
 				</section>
 
-				<section class="panel" id="sec-pict">
-					<div class="infoPanel menuPanel">
-						<h2>Menu |||</h2>
-					</div>
-					<!-- <div class="infoPanel" id="pictPanel">
-
-					</div> -->
-				</section>
-
+<!-- REALISATIONS -->
 				<section class="panel" id="sec-real">
+					<span class="menuButton">
+						<img src="img/menu.svg" alt="Menu" />Menu
+					</span>
+					<span class="switchButton">
+						<img src="img/left.svg" alt="Left" />
+						<img src="img/fullscreen.svg" alt="Fullscreen" style="visibility:hidden" />
+						<img src="img/right.svg" alt="Right" />
+					</span>
 					<div class="infoPanel menuPanel">
-						<h2>Menu |||</h2>
+						<ul class="select">
+							<li>
+								<a href="">
+									<img src="img/real/cat1.jpg" alt="Hey" />
+									<p>Hey</p>
+								</a>
+							</li>
+							<!-- <li>
+								<a href="">
+									<img src="img/real/cat2.png" alt="Nordik" />
+									<p>Nordik</p>
+								</a>
+							</li> -->
+							<li>
+								<a href="">
+									<img src="img/real/cat3.png" alt="Quai36" />
+									<p>Quai36</p>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class="infoPanel" id="realPanel">
-
+					<div class="infoPopup infoPanel">
+						<p>
+							Voici quelques unes de mes meilleurs créations infographiques.<br>
+							Celles-ci ont pour la plupart été réalisées lors de travaux pratique à l'IUT et répondent
+							à une demande fictive d'un commanditaire réel.
+						</p>
 					</div>
 				</section>
 
-				<section class="panel" id="sec-contact">
+<!-- CONTACT -->
+				<!-- <section class="panel" id="sec-contact">
 					<div class="infoPanel" id="contactPanel">
+						<h3>Intéressé par mon travail ? <br> Contactez moi !</h3>
+						<p>
+							Par mail : <a href="mailto:corentin.monmasson@gmail.com">corentin.monmasson@gmail.com</a><br>
+							Sur FB :<br>
+							Sur Twitter :<br>
 
+						</p>
 					</div>
-				</section>
+				</section> -->
 
 			</div>
 		</div>
-
-		<aside id="social">
-			<ul>
-				<li><a href="https://www.facebook.com/PixelsCat/" target="_blank"><div class="fb"></div></a></li>
-				<li><a href="http://flickr.com/photos/bftech" target="_blank"><div class="flickr"></div></a></li>
-				<li><a href="https://500px.com/bftech" target="_blank"><div class="fiveHpx"></div></a></li>
-			</ul>
-		</aside>
-
 		<footer>
 			<p>Copyright Corentin Monmasson aka. Bftech</p>
 		</footer>
 <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
 <script src="js/lightbox.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/fullscreen.js"></script>
 	</body>
 </html>
+<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/vaadin" title="Vaadin">Vaadin</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+<!-- <a href='http://fr.freepik.com/vecteurs-libre/icones-de-medias-sociaux-minimaux-pack_871051.htm'>Designed by Freepik</a> -->

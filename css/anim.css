@@ -31,10 +31,6 @@
 	}
 }
 
-#social:hover{
-	transform: translate(-70px,-50%);
-}
-
 .desc img:hover{
 	transform: scale(6) translateX(40%) translateY(10%);
 	border-color: rgba(255, 255, 255, 0.5);
