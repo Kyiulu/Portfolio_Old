@@ -6,16 +6,30 @@ section{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: background-image 1s;
+	transition: background-image 0.5s;
+	background-color: black;
+}
+header, footer{
+	transition: opacity 1s;
+}
+.hidden{
+	opacity: 0;
 }
 #sec-about{
-	background-image: url(../img/back2.jpg);
+	background-image: url(../img/back3.jpg);
+}
+#sec-about img{
+	height: 35px;
+}
+#sec-about span{
+	position: relative;
+	right: 0;
 }
 #sec-pict{
 	background-image: url(../img/back6.jpg);
 }
 #sec-real, #sec-cv{
-	background-image: url(../img/back3.jpg);
+	background-image: url(../img/back4.jpg);
 }
 #sec-contact{
 	background-image: url(../img/back6.jpg);
@@ -31,10 +45,6 @@ nav a:hover, nav a.active{
 }
 nav a:active{
 	background-color: white;
-}
-aside#social{
-	border-radius: 20px 0 0 20px;
-	transition: all 0.25s;
 }
 .fiveHpx{
 	background-image: url(../img/500icon.png);
@@ -75,6 +85,7 @@ aside#social{
 	transition: 1s;
 	border: solid 1px black;
 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 .menuButton.hide{
 	opacity: 0;
