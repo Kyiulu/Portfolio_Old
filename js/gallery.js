@@ -1,14 +1,49 @@
 var galleryP, galleryR;
 var current;
 var page;
+//Ugly image preloader
+var pic1 = new Image();
+var pic2 = new Image();
+var pic3 = new Image();
+var pic4 = new Image();
+var pic5 = new Image();
+var pic6 = new Image();
+var pic7 = new Image();
+var pic8 = new Image();
+var pic9 = new Image();
+var pic10 = new Image();
+var pic11 = new Image();
+var pic12 = new Image();
+var pic13 = new Image();
+var pic14 = new Image();
+var pic15 = new Image();
+pic1.src="img/pict/mac/1.jpg";
+pic2.src="img/pict/mac/2.jpg";
+pic3.src="img/pict/mac/3.jpg";
 
-var macroG = new Array("img/pict/mac/1.jpg","img/pict/mac/2.jpg","img/pict/mac/3.jpg");
-var lightG = new Array("img/pict/lgp/1.jpg","img/pict/lgp/2.jpg","img/pict/lgp/3.jpg");
-var bobitG = new Array("img/pict/bob/1.jpg","img/pict/bob/2.jpg","img/pict/bob/3.jpg");
+pic4.src="img/pict/lgp/1.jpg";
+pic5.src="img/pict/lgp/2.jpg";
+pic6.src="img/pict/lgp/3.jpg";
 
-var quai36 = new Array("img/real/qai/1.png","img/real/qai/2.png","img/real/qai/3.png");
-var nordik = new Array("img/real/nrd/1.png","img/real/nrd/2.png","img/real/nrd/3.png");
-var heyGal = new Array("img/real/hey/1.jpg","img/real/hey/2.jpg","img/real/hey/3.jpg");
+pic7.src="img/pict/bob/1.jpg";
+pic8.src="img/pict/bob/2.jpg";
+pic9.src="img/pict/bob/3.jpg";
+
+pic10.src="img/real/qai/1.png";
+pic11.src="img/real/qai/2.png";
+pic12.src="img/real/qai/3.png";
+
+pic13.src="img/real/hey/1.jpg";
+pic14.src="img/real/hey/2.jpg";
+pic15.src="img/real/hey/3.jpg";
+
+var macroG = new Array(pic1,pic2,pic3);
+var lightG = new Array(pic4,pic5,pic6);
+var bobitG = new Array(pic7,pic8,pic9);
+
+var quai36 = new Array(pic10,pic11,pic12);
+// var nordik = new Array(pic13,pic1,pic);
+var heyGal = new Array(pic13,pic14,pic15);
 
 $("nav a").click(function(){
   if ($(this).attr("href") == "#pict") {
@@ -108,12 +143,13 @@ $(".switchButton img").click(function(e){
 });
 
 function updateG(gal){
+  console.log("changing Wallp");
   if (gal == 1) {
-    console.log("wallP:"+galleryP[0]);
-    $("#sec-pict").css("background-image","url(./"+galleryP[current]+")");
+    console.log("wallP:"+galleryP[0].src);
+    $("#sec-pict").css("background-image","url("+galleryP[current].src+")");
   }else if(gal == 2) {
-    console.log("wallP:"+galleryR[0]);
-    $("#sec-real").css("background-image","url(./"+galleryR[current]+")");
+    console.log("wallP:"+galleryR[0].src);
+    $("#sec-real").css("background-image","url("+galleryR[current].src+")");
   }
   console.log("WallP changed");
 }

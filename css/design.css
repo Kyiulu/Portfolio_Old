@@ -21,25 +21,21 @@ header, footer{
 #sec-about img{
 	height: 35px;
 }
-#sec-about span{
-	position: relative;
-	right: 0;
-}
 #sec-pict{
 	background-image: url(../img/back6.jpg);
 }
 #sec-real, #sec-cv{
 	background-image: url(../img/back4.jpg);
 }
-#sec-contact{
+/*#sec-contact{
 	background-image: url(../img/back6.jpg);
-}
-nav a{
+}*/
+nav a, #aboutPanel a.link{
 	text-decoration: none;
 	color: lightgrey;
 	transition: all 0.75s;
 }
-nav a:hover, nav a.active{
+nav a:hover, nav a.active, #aboutPanel a.link:hover{
 	background-color: lightgrey;
 	color: black;
 }
